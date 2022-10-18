@@ -22,6 +22,16 @@
 
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5938EEZW7S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5938EEZW7S');
+  </script>
+
 </head>
 
 <body>
@@ -56,8 +66,8 @@
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="10">
       <h1 class="mb-4 pb-0">Hackathon<br><span>STEM</span> ITAM 2022</h1>
       <p class="mb-4 pb-0">Demuestra tu creatividad y habilidades participando en el primer hackathon del ITAM</p>
-      <p>Registro ahora abierto. Cierra en <span id="countdown"></span></p>
-      
+      <p class="mb-2 pb-0">El registro ya está abierto y cierra en <br><span id="countdown">--d --h --m --s</span></p>
+
       <a href="#registro" class="about-btn scrollto">Regístrate</a>
     </div>
   </section><!-- End Hero Section -->
@@ -70,8 +80,12 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Qué es</h2>
-          <br>
-          <p>El Hackathon STEM ITAM organizado por la ODE OutOfBounds...</p>
+        </div>
+        <div class="section-body">
+          <p>
+            Un evento interno del ITAM donde los estudiantes de ingenierías, actuaría, ciencia de datos y matemáticas
+            aplicadas competirán desarrollando un producto o servicio que solucione un problema (secreto hasta que
+            empiece el hackathon) en un tiempo reducido (aproximadamente 5 días).</p>
         </div>
 
       </div>
@@ -96,7 +110,7 @@
               Se cierra el registro
             </p>
           </div>
-          <!--Ignaguracion-->
+          <!--inauguración-->
           <div class="fecha-futura">
             <h3>Inauguración</h3>
             <p>
@@ -109,7 +123,7 @@
           <div class="fecha-futura">
             <h3>Hackatón</h3>
             <p>
-              <span>Lunes 31 de octubre 13:00 -  Viernes 4 de noviembre 23:59</span>
+              <span>Lunes 31 de octubre 13:00 - Viernes 4 de noviembre 23:59</span>
               <br>
             </p>
           </div>
@@ -117,12 +131,12 @@
           <div class="fecha-futura">
             <h3>Premiación</h3>
             <p>
-              <span>Lunes 7 de noviembre a las 12:00hrs</span>
+              <span>Lunes 7 de noviembre a las 12:00</span>
               <br>
               En Sala de Maestros
             </p>
           </div>
-          
+
 
         </div>
       </div>
@@ -133,8 +147,30 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>En qué consiste</h2>
-          <br>
-          <p>El Hackathon STEM ITAM organizado por la ODE OutOfBounds...</p>
+        </div>
+        <div class="section-body">
+          <ul>
+            <li>
+              Se participarán en equipos de mínimo 2 y máximo 5 integrantes. Además, a cada equipo se le podrán asignar
+              primersemestrin@s en el espíritu de formar comunidad.
+            </li>
+            <li>
+              El problema a solucionar será revelado al inicio del hackathon.
+            </li>
+            <li>
+              Durante el hackathon los equipos tendrán que desarrollar una página web, aplicación móvil o programa
+              ejecutable que solucione el problema.
+            </li>
+            <li>
+              Antes de la fecha límite los equipos deberán entregar su solución, el código fuente desarrollado y una
+              presentación en forma de video de máximo 10 minutos.
+            </li>
+            <li>
+              Los ganadores serán nombrados y recibirán sus premios en una ceremonia de premiación.
+            </li>
+          </ul>
+
+          Puedes consultar las reglas detalladas <a href="reglas.pdf" target="_blank">aquí</a>.
         </div>
 
       </div>
@@ -147,9 +183,15 @@
           <h2>Registro</h2>
         </div>
         <div class="section-body">
+          <p class="mb-3">
+            Si eres de los <b>primeros 2 semestres</b> y <b>no tienes equipo</b>
+            <br>
+            <a href="#registro" class="about-btn scrollto">Regístrate sin equipo</a>
+          </p>
           <p>
-            <a href="#registro" class="about-btn scrollto">Un Registro</a>
-            <a href="#registro" class="about-btn scrollto">Otro Registro</a>
+            De otra forma
+            <br>
+            <a href="#registro" class="about-btn scrollto">Registra a tu equipo</a>
           </p>
         </div>
 
@@ -287,11 +329,11 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
-    
+
   <!--Script para countdown-->
   <script>
     // Set the date we're counting down to
-    var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+    var countDownDate = new Date("Oct 28, 2022 23:59:59").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function () {
